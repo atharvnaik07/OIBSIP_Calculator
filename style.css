@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  font-family: sans-serif;
+}
+h1{
+  color: #efefef;
+  text-shadow:0 0 50px aqua;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  /* background-color: #c3eaff; */
+  background-image: url(BG.jpg);
+  background-repeat:no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px blue;
+}
+
+#display {
+  margin: 0 10px;
+  height: 150px;
+  width: auto;
+  max-width: 270px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button#equal {
+  height: 130px;
+}
+.calculator {
+  background-color: black;
+}
+
+.calculator #display {
+  color: #fff;
+ 
+}
+.calculator button.btn-number {
+  background-color: #c3eaff;
+  color: #000000;
+}
+.calculator button.btn-operator {
+  background-color: aqua;
+  color: darkblue;
+}
+
+
+
+
